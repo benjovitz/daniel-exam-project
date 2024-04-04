@@ -1,0 +1,11 @@
+import type { TemplateConfig } from '../helper';
+import type { <%= it.componentName %>Data } from './<%= it.name %>.query';
+
+import { <%= it.type %>DataLoader } from './<%= it.name %>.query';
+import { <%= it.componentName %> } from './<%= it.name %>.template';
+
+export const <%= it.type %>Config: TemplateConfig<'<%= it.type %>', <%= it.componentName %>Data> = {
+	name: '<%= it.type %>',
+	dataLoader: <%= it.type %>DataLoader,
+	Component: <%= it.componentName %>,
+};

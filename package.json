@@ -1,0 +1,61 @@
+{
+	"name": "boilerplate-next",
+	"version": "",
+	"private": true,
+	"engines": {
+		"node": ">=18"
+	},
+	"scripts": {
+		"build": "next build",
+		"dev": "next",
+		"lint": "eslint . && ls-lint",
+		"lint:fix": "eslint . --fix",
+		"start": "next start",
+		"type-check": "tsc --noEmit",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build",
+		"chromatic": "npx chromatic",
+		"generate": "assemble"
+	},
+	"dependencies": {
+		"@jdpnielsen/assemble": "^0.0.0",
+		"@ls-lint/ls-lint": "^2.2.2",
+		"@sanity/block-tools": "^3.20.0",
+		"@sanity/image-url": "^1.0.2",
+		"@sanity/vision": "^3.36.3",
+		"@vercel/og": "^0.5.17",
+		"classnames": "^2.3.2",
+		"next": "^14.0.3",
+		"next-sanity": "^7.1.4",
+		"nprogress": "^0.2.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"sanity": "^3.36.3",
+		"sanity-plugin-asset-source-unsplash": "^1.1.1",
+		"sanity-plugin-iframe-pane": "^2.5.7",
+		"sass": "^1.68.0",
+		"styled-components": "^6.1.8",
+		"typescript": "5.2.2"
+	},
+	"devDependencies": {
+		"@jdpnielsen/eslint-flat-config": "^1.1.2",
+		"@noaignite-dk/eslint-config": "^1.6.3-0",
+		"@storybook/addon-a11y": "^7.5.3",
+		"@storybook/addon-essentials": "^7.5.3",
+		"@storybook/addon-interactions": "^7.5.3",
+		"@storybook/addon-links": "^7.5.3",
+		"@storybook/blocks": "^7.5.3",
+		"@storybook/nextjs": "^7.5.3",
+		"@storybook/react": "^7.5.3",
+		"@storybook/testing-library": "^0.2.2",
+		"@types/node": "18.18.4",
+		"@types/nprogress": "^0.2.1",
+		"@types/react": "^18.2.37",
+		"autoprefixer": "^10.4.16",
+		"chromatic": "^9.0.0",
+		"eslint": "^8.51.0",
+		"eslint-plugin-storybook": "^0.6.15",
+		"postcss": "^8.4.31",
+		"storybook": "^7.5.3"
+	}
+}

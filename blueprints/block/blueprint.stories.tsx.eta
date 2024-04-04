@@ -1,0 +1,25 @@
+import type { Meta, StoryObj } from '@storybook/react';
+
+import { randomKey } from '@sanity/block-tools';
+
+import { <%= it.componentName %>Block } from './<%= it.name %>.block';
+
+const meta: Meta<typeof <%= it.componentName %>Block> = {
+	title: 'Blocks/<%= it.componentName %>',
+	component: <%= it.componentName %>Block,
+};
+
+export default meta;
+
+type Story = StoryObj<typeof <%= it.componentName %>Block>;
+
+export const <%= it.componentName %>BlockStory = {
+	name: '<%= it.componentName %>',
+	args: {
+		data: {
+			_key: randomKey(12),
+			_type: '<%= it.type %>Block',
+			title: '<%= it.name %> block',
+		},
+	},
+} satisfies Story;

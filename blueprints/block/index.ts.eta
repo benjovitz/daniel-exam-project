@@ -1,0 +1,11 @@
+import type { BlockConfig } from '../helper';
+import type { <%= it.componentName %>BlockData } from './<%= it.name %>.query';
+
+import { <%= it.componentName %>Block } from './<%= it.name %>.block';
+import { <%= it.type %>BlockQueryFragment } from './<%= it.name %>.query';
+
+export const <%= it.type %>Config: BlockConfig<'<%= it.type %>Block', <%= it.componentName %>BlockData> = {
+	name: '<%= it.type %>Block',
+	query: <%= it.type %>BlockQueryFragment,
+	Component: <%= it.componentName %>Block,
+} satisfies BlockConfig<'<%= it.type %>Block', <%= it.componentName %>BlockData>;

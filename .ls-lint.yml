@@ -1,0 +1,11 @@
+ls:
+  .js: lowercase
+  .ts: lowercase
+  .tsx: lowercase
+  .d.ts: lowercase
+  .json: lowercase
+
+ignore:
+  - .git
+  - node_modules
+  - .next

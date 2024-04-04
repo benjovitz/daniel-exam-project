@@ -1,0 +1,11 @@
+import { groq } from 'next-sanity';
+
+import type { BaseBlockProps } from '@blocks/helper';
+
+export const <%= it.type %>BlockQueryFragment = groq`
+	title,
+`;
+
+export type <%= it.componentName %>BlockData = BaseBlockProps<'<%= it.type %>Block', {
+	title: string;
+}>;

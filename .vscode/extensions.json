@@ -1,0 +1,8 @@
+{
+	"recommendations": [
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint",
+		"dangmai.workspace-default-settings",
+		"editorconfig.editorconfig"
+	]
+}

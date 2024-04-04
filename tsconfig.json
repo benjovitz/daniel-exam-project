@@ -1,0 +1,57 @@
+{
+	"ts-node": {
+		"esm": true,
+		"compilerOptions": {
+			"moduleResolution": "NodeNext",
+			"module": "NodeNext",
+			"target": "ESNext"
+		}
+	},
+	"compilerOptions": {
+		"incremental": true,
+		"target": "ES2017",
+		"jsx": "preserve",
+		"lib": [
+			"dom",
+			"dom.iterable",
+			"esnext"
+		],
+		"baseUrl": ".",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"paths": {
+			"@app/*": ["src/app/*"],
+			"@blocks": ["src/blocks/index.ts"],
+			"@blocks/*": ["src/blocks/*"],
+			"@components/*": ["src/components/*"],
+			"@config": ["src/config.ts"],
+			"@lib/*": ["src/lib/*"],
+			"@templates": ["src/templates/index.ts"],
+			"@templates/*": ["src/templates/*"]
+		},
+		"resolveJsonModule": true,
+		"allowJs": true,
+		"strict": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"skipLibCheck": true,
+		"plugins": [
+			{
+				"name": "next"
+			}
+		]
+	},
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		".next/types/**/*.ts",
+		"next.config.mjs",
+		"blueprints/**/*.mts"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}

@@ -1,0 +1,64 @@
+body {
+	cursor: default;
+}
+
+body,
+html,
+#__next {
+	min-height: 100%;
+}
+
+a,
+select,
+button {
+	&:not(:disabled) {
+		cursor: pointer;
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-size: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	letter-spacing: inherit;
+	line-height: inherit;
+	text-transform: inherit;
+	font-weight: inherit;
+	list-style: none;
+	border-radius: 0;
+	color: inherit;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+	background-color: transparent;
+	border: none;
+}
+
+body:not(.user-is-tabbing) :focus {
+	outline: none;
+}
+
+::-webkit-search-cancel-button {
+	display: none !important;
+}
+
+legend {
+	display: table;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+	+ * {
+		clear: both;
+	}
+}
+
+fieldset {
+	min-width: 0;
+}
+
+svg {
+	display: block;
+}

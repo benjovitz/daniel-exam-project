@@ -1,0 +1,16 @@
+import type { <%= it.componentName %>BlockData } from './<%= it.name %>.query';
+
+import styles from './<%= it.name %>.module.scss';
+
+interface <%= it.componentName %>BlockProps {
+	data: <%= it.componentName %>BlockData;
+}
+
+export function <%= it.componentName %>Block(props: <%= it.componentName %>BlockProps) {
+	return (
+		<div className={styles.<%= it.componentClass %>Block}>
+			<p>Hi from <%= it.componentName %>Block</p>
+			<code>{JSON.stringify(props, undefined, 2)}</code>
+		</div>
+	);
+}
