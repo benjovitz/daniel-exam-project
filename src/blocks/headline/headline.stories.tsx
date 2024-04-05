@@ -17,7 +17,7 @@ export const HeadlineBlockStory = {
 		data: {
 			_key: 'cd50b80de6c0',
 			_type: 'headlineBlock',
-			title: '& ACCELERATING 100+ STARTUPS',
+			title: 'Shadow money wizard gang',
 			subtitle: 'WITH INTERNATIONAL POTENTIAL',
 		},
 	},
