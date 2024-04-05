@@ -17,6 +17,7 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
 		});
 
 	if (!template) {
+		console.log("no template")
 		return notFound();
 	}
 
@@ -24,6 +25,7 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
 	const data = await dataLoader({ preview, slug });
 
 	if (!data) {
+		console.log("no data")
 		return notFound();
 	}
 
