@@ -1,0 +1,20 @@
+.mainHeader {
+	font-size: 176px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	mix-blend-mode: exclusion;
+	color: white;
+	white-space: nowrap;
+	display: inline-block;
+	animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+	0% {
+	  transform: translateX(100%);
+	}
+	100% {
+	  transform: translateX(-100%);
+	}
+  }
