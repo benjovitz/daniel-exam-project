@@ -4,8 +4,8 @@
 	font-weight: 400;
 	line-height: normal;
 	mix-blend-mode: exclusion;
-	color: white;
 	white-space: nowrap;
+	color: white;
 	display: inline-block;
 	animation: slide 20s linear infinite;
 }
@@ -17,4 +17,5 @@
 	100% {
 	  transform: translateX(-100%);
 	}
+
   }

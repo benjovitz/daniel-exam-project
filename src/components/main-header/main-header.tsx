@@ -6,6 +6,8 @@ export interface MainHeaderProps {
 
 export default function MainHeader({ title }: MainHeaderProps) {
 	return (
-		<span className={styles.mainHeader}>{title}</span>
+		<div>
+			<span className={styles.mainHeader}>{title}</span>
+		</div>
 	);
 };

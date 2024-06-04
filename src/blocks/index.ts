@@ -4,6 +4,7 @@ import type { BlockConfig } from './helper';
 import type { BlockKeys } from './schemas';
 
 import { headlineBlockConfig } from './headline';
+import { headlineImageBlockConfig } from './headline-image';
 import { richtextConfig } from './richtext';
 
 /**
@@ -12,6 +13,7 @@ import { richtextConfig } from './richtext';
 /* eslint perfectionist/sort-objects: "warn" */
 export const blockDefinitions = {
 	[headlineBlockConfig.name]: headlineBlockConfig,
+	[headlineImageBlockConfig.name]: headlineImageBlockConfig,
 	[richtextConfig.name]: richtextConfig,
 } satisfies { [key in BlockKeys]: BlockConfig };
 
