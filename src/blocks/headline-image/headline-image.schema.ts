@@ -14,6 +14,11 @@ export default defineType({
 			type: 'string',
 			validation: (rule) => rule.required(),
 		}),
+		defineField({
+			name: 'src',
+			type: 'string',
+			validation: (rule) => rule.required(),
+		}),
 	],
 	preview: {
 		select: {
