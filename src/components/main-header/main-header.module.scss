@@ -8,6 +8,7 @@
 	color: white;
 	display: inline-block;
 	animation: slide 20s linear infinite;
+	max-width: 1440px;
 }
 
 @keyframes slide {
@@ -17,5 +18,5 @@
 	100% {
 	  transform: translateX(-200%);
 	}
-
   }
+

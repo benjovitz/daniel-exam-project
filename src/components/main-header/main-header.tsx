@@ -6,7 +6,7 @@ export interface MainHeaderProps {
 
 export default function MainHeader({ title }: MainHeaderProps) {
 	return (
-		<div>
+		<div style={{ width: '100%' }}>
 			<span className={styles.mainHeader}>{title}</span>
 		</div>
 	);
