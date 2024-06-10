@@ -17,7 +17,11 @@ export default defineType({
 		defineField({
 			name: 'translation',
 			type: 'string',
-			validation: (rule) => rule.required(),
+		}),
+		defineField({
+			name: 'famousPeople',
+			type: 'array',
+			of: [{ type: 'string' }],
 		}),
 		defineField({
 			name: 'language',

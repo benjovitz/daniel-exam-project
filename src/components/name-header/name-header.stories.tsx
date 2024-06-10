@@ -21,7 +21,7 @@ export const ChineseName: Story = {
 
 export const JapaneseName: Story = {
 	args: {
-		name: 'ブルーアイズ・ホワイト・ドラゴン', color: '#BC002D',
+		name: '青眼の白龍', color: '#BC002D',
 	},
 };
 

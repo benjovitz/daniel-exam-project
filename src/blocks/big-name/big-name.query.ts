@@ -3,10 +3,11 @@ import { groq } from 'next-sanity';
 import type { BaseBlockProps } from '@blocks/helper';
 
 export const bigNameBlockFragment = groq`
-	title,
+	name,
 	translation,
 	language,
 	color,
+	famousPeople
 `;
 
 export type BigNameBlockData = BaseBlockProps<'bigNameBlock', {
@@ -14,4 +15,5 @@ export type BigNameBlockData = BaseBlockProps<'bigNameBlock', {
 	translation: string;
 	language: string;
 	color: string;
+	famousPeople: Array<string>;
 }>;
